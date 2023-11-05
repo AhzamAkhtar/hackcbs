@@ -14,9 +14,7 @@ const Hero = () => {
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                             </svg>
                         </a>
-                        <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-gray-300 hover:bg-gray-100 hover:text-black focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-                            Learn more
-                        </a>
+                       
                     </div>
                 </div>
 
@@ -47,6 +45,35 @@ const Hero = () => {
                         </div>
                     </div>
                 </section>
+
+                <section class="bg-black dark:bg-gray-900">
+                    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="bg-gray-950 dark:bg-gray-950 dark:border-gray-700 rounded-lg p-8 md:p-12">
+                                <a href="#" class="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-yellow-400 mb-2">
+                                    <svg class="w-2.5 h-2.5 mr-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
+                                        <path d="M17 11h-2.722L8 17.278a5.512 5.512 0 0 1-.9.722H17a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1ZM6 0H1a1 1 0 0 0-1 1v13.5a3.5 3.5 0 1 0 7 0V1a1 1 0 0 0-1-1ZM3.5 15.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2ZM16.132 4.9 12.6 1.368a1 1 0 0 0-1.414 0L9 3.55v9.9l7.132-7.132a1 1 0 0 0 0-1.418Z" />
+                                    </svg>
+                                    Content Protection
+                                </a>
+                                <h2 class="text-white dark:text-white text-3xl font-extrabold mb-2">Protect your intellectual property from unauthorized access.</h2>
+                                <p class="text-lg font-normal text-white dark:text-gray-400 mb-4">Safeguard your intellectual property with robust security measures to prevent unauthorized access, copying, and distribution.</p>
+                            </div>
+                            <div class="bg-gray-950 dark:bg-gray-800 dark:border-gray-700 rounded-lg p-8 md:p-12">
+                                <a href="#" class="bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-red-400 mb-2">
+                                    <svg class="w-2.5 h-2.5 mr-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" strokewidth="2" d="M5 4 1 8l4 4m10-8 4 4-4 4M11 1 9 15" />
+                                    </svg>
+                                    Customizable
+                                </a>
+                                <h2 class="text-white dark:text-white text-3xl font-extrabold mb-2">Easily integrate this solution into your existing OTT platform.</h2>
+                                <p class="text-lg font-normal text-white dark:text-gray-400 mb-4">Seamlessly integrate this solution into your OTT platform with flexible, tailored options to meet your specific needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                                
 
             </section>
         </>

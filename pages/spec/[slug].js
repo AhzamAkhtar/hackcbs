@@ -67,7 +67,7 @@ export async function getServerSideProps(context) {
     console.log(`slug is my ${slug}`);
     if (slug == "TheGuilty") {
         name = "The Guilty",
-            img = "/two.jpg",
+            img = "/one.jpg",
             pricing = "20"
             description='"The Guilty" is a tense and gripping thriller film directed by Antoine Fuqua. It follows a 911 dispatcher, played by Jake Gyllenhaal, who becomes deeply involved in a high-stakes rescue operation when he receives a call from a kidnapped woman'
     }

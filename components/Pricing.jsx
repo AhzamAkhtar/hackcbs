@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { useUSDCPay } from '../hooks/PayUSDC';
-import { PublicKey } from '@solana/web3.js';
 import { useCashApp } from '../hooks/Pay';
 import { useWallet } from "@solana/wallet-adapter-react";
 import GenQR from './transaction/GenQR';
@@ -8,6 +7,8 @@ import TransactionQRModal from './transaction/TransactionQRModal';
 import { Dropdown } from "flowbite-react";
 import wallet from '../wallet/wallet';
 import * as bs58 from "bs58";
+import { Metaplex, keypairIdentity  , bundlrStorage} from "@metaplex-foundation/js";
+
 import {
   Commitment,
   Connection,
@@ -28,7 +29,7 @@ const Pricing = ({ pricing }) => {
   const commitment = "confirmed";
   const connection = new Connection("https://api.devnet.solana.com", commitment);
 
-  const mint = new PublicKey("Go1cRvBxpUiwfig4ShR7XWC3C9g3GbZYfFeUN2jLYgQF");
+  const mint = new PublicKey("Cm54psEBeyKuZQMZ5tXvZh5ERueWJ3pcyQxbYPnrSZ4o");
 
   // Recipient address
   const to = new PublicKey("44n5CYX18L6p4VxVECE9ZNYrAGB9GKD477b78kPNq5Su");
@@ -55,13 +56,13 @@ const Pricing = ({ pricing }) => {
   const pay = () => {
     const txResponce = createTransaction(userPubkey, toPubkey, amount);
     const txData = txResponce;
-    setTimeout(()=>{
+    setTimeout(() => {
       transferNFT()
-    },[3000])
+    }, [3000])
   };
 
   const transferNFT = async () => {
-    const form = new PublicKey("9ZyYXZa5rh7xxM4H4ZBxRQh8ruY5ZhWpSvd6rBZ82eK2")
+    const form = new PublicKey("7tx5KyWoJyuJZ8cArXF9UKu85Ynh3hB1Am35xKm8xzSw")
 
     const to_account = await getOrCreateAssociatedTokenAccount(
       connection,
@@ -81,6 +82,7 @@ const Pricing = ({ pricing }) => {
 
     console.log("Success ! Check", txhash);
   }
+
   return (
     <>
       <section class="text-gray-400 bg-black body-font overflow-hidden">
