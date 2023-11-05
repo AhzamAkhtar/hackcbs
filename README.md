@@ -1,5 +1,5 @@
 <p  align="center">
-  <img  src="https://firebasestorage.googleapis.com/v0/b/shrine-76128.appspot.com/o/1.jpg?alt=media&token=1b5dc480-4007-44a2-b712-80b4ee991d12"  width="200" height="200 />
+  <img  src="https://firebasestorage.googleapis.com/v0/b/shrine-76128.appspot.com/o/1.jpg?alt=media&token=1b5dc480-4007-44a2-b712-80b4ee991d12"  width="200" height="200" />
 </p>  
 
 
